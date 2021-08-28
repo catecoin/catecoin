@@ -185,10 +185,6 @@ func TestGenesisHashes(t *testing.T) {
 			genesis: DefaultRinkebyGenesisBlock(),
 			hash:    params.RinkebyGenesisHash,
 		},
-		{
-			genesis: DefaultBaikalGenesisBlock(),
-			hash:    params.BaikalGenesisHash,
-		},
 	}
 	for i, c := range cases {
 		b := c.genesis.MustCommit(rawdb.NewMemoryDatabase())
